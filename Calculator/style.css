@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  /*   background: linear-gradient(rgb(140, 4, 152), cyan); */
+  background: -webkit-linear-gradient(rgb(222, 158, 221), rgb(212, 4, 231));
+}
+.custom-shape-divider-top-1670055430 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1670055430 svg {
+  position: relative;
+  display: block;
+  width: calc(164% + 1.3px);
+  height: 413px;
+}
+
+.custom-shape-divider-top-1670055430 .shape-fill {
+  fill: rgba(232, 9, 221, 0.4);
+}
+
+.calc {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  top: 10%;
+  height: 80%;
+  position: absolute;
+  left: 40%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid cyan;
+  border-radius: 10px;
+}
+.calc:hover {
+  box-shadow: 0 0 20px cyan inset;
+  transform: scale(1.01);
+  transition: transform 0.2s ease-in-out;
+}
+.ans {
+  position: relative;
+  top: 5%;
+}
+#display {
+  position: relative;
+  height: 80px;
+  width: 90%;
+  left: 5%;
+  top: 0%;
+  border-radius: 10px;
+  border: 0 solid transparent;
+  box-shadow: 0 0 10px cyan inset;
+  outline: none;
+  color: whitesmoke;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 2rem;
+}
+#num {
+  position: relative;
+}
+.num input {
+  position: relative;
+  left: 6%;
+  top: 40px;
+  margin: 4px;
+  height: 80px;
+  width: 80px;
+  border: 0px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 -5px 10px rgb(255, 255, 255) inset;
+  font-size: 2rem;
+  color: red;
+  background: rgba(255, 255, 255, 0.3);
+}
+input:hover {
+  background: rgba(235, 0, 252, 0.736);
+  color: black;
+  transform: scale(1.1);
+  transition: transform 0.3s;
+  box-shadow: 0 -5px 10px rgb(32, 24, 24) inset;
+}
+#clr {
+  width: 200px;
+  font-variant: small-caps;
+  letter-spacing: 3px;
+  color: rgb(38, 0, 151);
+}
+#eql {
+  position: relative;
+
+  width: 143px;
+}
+.circle1 {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  height: 300px;
+  width: 300px;
+  filter: blur(60px);
+  background-color: pink;
+  border-radius: 49% 89% 50% 49%/ 34% 36% 75% 58%;
+  animation: circle 8s infinite ease-in-out;
+}
+@keyframes circle {
+  0%,
+  40% {
+    transform: scale(0.2);
+    background: blue;
+  }
+  60%,
+  80% {
+    transform: scale(0.6);
+    background: rgb(0, 255, 94);
+  }
+  20%,
+  100% {
+    transform: scale(1);
+    background: red;
+  }
+}
+.circle2 {
+  position: absolute;
+  top: 20%;
+  left: 55%;
+  height: 300px;
+  width: 300px;
+  filter: blur(50px);
+  background-color: red;
+  border-radius: 49% 89% 50% 49%/ 34% 36% 75% 58%;
+  animation: circle1 8s infinite ease-in-out;
+}
+@keyframes circle1 {
+  0%,
+  40% {
+    transform: scale(1);
+    background: red;
+    border-radius: 98% 74% 47% 47%/ 96% 6% 75% 52%;
+  }
+  60%,
+  80% {
+    transform: scale(0.6);
+    background: rgb(0, 255, 94);
+  }
+  20%,
+  100% {
+    transform: scale(0.2);
+    background: blue;
+    border-radius: 88% 34% 67% 47%/ 46% 23% 75% 58%;
+  }
+}
